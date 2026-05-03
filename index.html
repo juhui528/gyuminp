@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        main: '#5133E7',
+                        sub: '#F7F6FD',
+                    },
+                    fontSize: {
+                        'xs': '1rem', 
+                        'sm': '1.125rem',
+                        'base': '1.25rem',
+                        'lg': '1.5rem',
+                        'xl': '1.75rem',
+                    },
+                    screens: {
+                        'mob': {'max': '768px'},
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sub text-neutral-900 dark:bg-black dark:text-white overflow-x-hidden">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 w-full z-50 py-6 mob:hidden">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-3xl italic-black text-main">
+                GYUMIN<span class="text-neutral-800 dark:text-white transition-colors duration-300">*</span>P
+            </div>
+            <nav class="flex space-x-12 text-[16px] font-bold uppercase tracking-widest">
+                <a href="#profile" class="hover:text-main transition-colors">Profile</a>
+                <a href="#skills" class="hover:text-main transition-colors">Skills</a>
+                <a href="#portfolio" class="hover:text-main transition-colors">Works</a>
+                <a href="#contact" class="hover:text-main transition-colors">Contact</a>
+            </nav>
+            <a href="https://changeable-orchid-6c4.notion.site/Resume-354a07151aea80678847fc8aa4cbe6d9?pvs=143" target="_blank" class="flex items-center gap-4">
+                <button class="bg-main text-white px-8 py-3 rounded-full font-black text-[16px] hover:scale-105 transition-transform shadow-lg shadow-main/20">
+                    HIRE ME
+                </button>
+            </a>
+        </div>
+    </header>
+    <!-- // Header -->
+
+    <!-- Mobile Bottom Bar -->
+    <nav class="hidden mob:flex fixed bottom-0 left-0 w-full h-20 z-[110] mobile-nav-glass items-center justify-around px-4 rounded-t-[2.5rem]">
+        <a href="#hero" class="flex flex-col items-center gap-1 text-main">
+            <i class="fa-solid fa-house text-2xl"></i>
+            <span class="text-[12px] font-bold uppercase tracking-tighter">Home</span>
+        </a>
+        <a href="#profile" class="flex flex-col items-center gap-1 opacity-40 hover:opacity-100 transition-opacity">
+            <i class="fa-solid fa-user text-2xl"></i>
+            <span class="text-[12px] font-bold uppercase tracking-tighter">Profile</span>
+        </a>
+        <a href="#portfolio" class="flex flex-col items-center gap-1 opacity-40 hover:opacity-100 transition-opacity">
+            <i class="fa-solid fa-briefcase text-2xl"></i>
+            <span class="text-[12px] font-bold uppercase tracking-tighter">Works</span>
+        </a>
+        <a href="#contact" class="flex flex-col items-center gap-1 opacity-40 hover:opacity-100 transition-opacity">
+            <i class="fa-solid fa-paper-plane text-2xl"></i>
+            <span class="text-[12px] font-bold uppercase tracking-tighter">Contact</span>
+        </a>
+    </nav>
+    <!-- //Mobile Bottom Bar -->
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div id="canvas-container"></div>
+        
+        <div class="relative z-10 text-center pointer-events-none px-4">
+            <h1 class="text-6xl mob:text-5xl md:text-9xl italic-black mb-4 mix-blend-difference uppercase leading-tight">
+                CREATIVE<br />
+                <span class="text-main">DESIGNER</span>
+            </h1>
+            <p class="text-[18px] mob:text-[16px] md:text-xl font-light tracking-[0.4em] uppercase opacity-60">
+                Visualizing Future Through Digital Art
+            </p>
+        </div>
+
+        <div class="absolute bottom-16 mob:bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+            <div class="mouse-container">
+                <div class="mouse-scroll">
+                    <div class="mouse-wheel"></div>
+                </div>
+            </div>
+            <span class="text-[14px] uppercase tracking-[0.2em] font-bold opacity-40 text-neutral-500 dark:text-neutral-400">Scroll</span>
+        </div>
+    </section>
+    <!-- //Hero Section -->
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-32 mob:py-20 bg-white dark:bg-[#050505] transition-colors">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-20 mob:gap-12 items-center">
+                <div class="w-full lg:w-2/5">
+                    <div class="relative inline-block w-full max-w-[320px] mx-auto">
+                        <div class="border-2 border-main p-2 rounded-2xl">
+                            <div class="w-full aspect-[4/5] bg-neutral-100 dark:bg-neutral-900 rounded-xl flex items-center justify-center overflow-hidden">
+                                <figure>
+                                    <img src="./img/Rectangle 43.jpg" alt="JEON">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 mob:right-0 mob:-bottom-8 bg-main text-white p-6 mob:p-4 rounded-2xl italic-black text-2xl mob:text-xl leading-tight shadow-xl">
+                            DESIGNER<br/>JEON GYU MIN
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-3/5 space-y-10 mob:space-y-6">
+                    <div>
+                        <h2 class="text-5xl mob:text-4xl italic-black mb-6 uppercase tracking-tighter">Profile</h2>
+                        <p class="text-3xl mob:text-xl text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
+                            "사용자의 경험을 시각적 언어로 <span class="text-main font-medium border-b-4 border-main pb-1">혁신</span>하는 디자이너입니다."
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mob:gap-6">
+                        <div class="space-y-6 mob:space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-main/10 dark:bg-main p-3 rounded-xl text-main dark:text-white w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-envelope text-lg"></i></div>
+                                <span class="font-bold text-[16px]">juhui528@gmail.com</span>
+                            </div>
+                            <a href="tel:01050674118" class="flex items-center gap-4 hover:text-main transition-colors group">
+                                <div class="bg-main/10 dark:bg-main p-3 rounded-xl text-main dark:text-white w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-transform"><i class="fa-solid fa-phone text-lg"></i></div>
+                                <span class="font-bold text-[16px]">010-****-4118</span>
+                            </a>
+                        </div>
+                        <div class="space-y-6 mob:space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-main/10 dark:bg-main p-3 rounded-xl text-main dark:text-white w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-award text-lg"></i></div>
+                                <span class="font-bold text-[16px]">웹디자인개발기능사, 컴퓨터그래픽스운용기능사</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="bg-main/10 dark:bg-main p-3 rounded-xl text-main dark:text-white w-12 h-12 flex items-center justify-center"><i class="fa-solid fa-graduation-cap text-lg"></i></div>
+                                <span class="font-bold text-[16px]">원예생명과학 전공</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Profile Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-32 mob:py-20 bg-sub dark:bg-black transition-colors border-y border-neutral-200 dark:border-neutral-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl mob:text-3xl italic-black uppercase tracking-tighter mb-16 mob:mb-10 inline-block border-b-4 border-main pb-2">Skill Set</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mob:gap-4 justify-items-center">
+                
+                <!-- Figma -->
+                <div class="skill-card p-10 mob:p-8 rounded-[2.5rem] group" tabindex="0">
+                    <div class="skill-main-content">
+                        <i class="fa-brands fa-figma text-5xl mob:text-4xl mb-6 mob:mb-4 group-hover:text-main"></i>
+                        <h3 class="text-[16px] font-black tracking-widest uppercase">Figma</h3>
+                    </div>
+                    <div class="skill-overlay text-white">
+                        <div class="text-left w-full space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>UX/UI Design</span><span>90%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 90%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>Prototyping</span><span>80%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="skill-card p-10 mob:p-8 rounded-[2.5rem] group" tabindex="0">
+                    <div class="skill-main-content">
+                        <i class="fa-solid fa-code text-5xl mob:text-4xl mb-6 mob:mb-4 group-hover:text-main"></i>
+                        <h3 class="text-[16px] font-black tracking-widest uppercase">Dev</h3>
+                    </div>
+                    <div class="skill-overlay text-white">
+                        <div class="text-left w-full space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>HTML/CSS</span><span>90%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 90%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>Javascript</span><span>60%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 60%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adobe CC -->
+                <div class="skill-card p-10 mob:p-8 rounded-[2.5rem] group" tabindex="0">
+                    <div class="skill-main-content">
+                        <i class="fa-solid fa-wand-magic-sparkles text-5xl mob:text-4xl mb-6 mob:mb-4 group-hover:text-main"></i>
+                        <h3 class="text-[16px] font-black tracking-widest uppercase">Adobe CC</h3>
+                    </div>
+                    <div class="skill-overlay text-white">
+                        <div class="text-left w-full space-y-2">
+                            <div>
+                                <div class="flex justify-between text-[12px] font-bold uppercase"><span>Photoshop</span><span>90%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 90%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[12px] font-bold uppercase"><span>Illustrator</span><span>90%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 90%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[12px] font-bold uppercase"><span>Premiere</span><span>60%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 60%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[12px] font-bold uppercase"><span>InDesign</span><span>70%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Github -->
+                <div class="skill-card p-10 mob:p-8 rounded-[2.5rem] group" tabindex="0">
+                    <div class="skill-main-content">
+                        <i class="fa-brands fa-github text-5xl mob:text-4xl mb-6 mob:mb-4 group-hover:text-main"></i>
+                        <h3 class="text-[16px] font-black tracking-widest uppercase">Github</h3>
+                    </div>
+                    <div class="skill-overlay text-white">
+                        <div class="text-left w-full space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>Git Flow</span><span>85%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 85%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>Versioning</span><span>80%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 80%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notion -->
+                <div class="skill-card p-10 mob:p-8 rounded-[2.5rem] group" tabindex="0">
+                    <div class="skill-main-content">
+                        <i class="fa-solid fa-note-sticky text-5xl mob:text-4xl mb-6 mob:mb-4 group-hover:text-main"></i>
+                        <h3 class="text-[16px] font-black tracking-widest uppercase">Notion</h3>
+                    </div>
+                    <div class="skill-overlay text-white">
+                        <div class="text-left w-full space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>Productivity</span><span>95%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 95%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[14px] font-bold uppercase"><span>Planning</span><span>90%</span></div>
+                                <div class="progress-bar-bg"><div class="progress-bar-fill" style="--percent: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //Skills Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-32 mob:py-20 bg-white dark:bg-black transition-colors">
+        <div class="container mx-auto px-6">
+            <div class="mb-20 mob:mb-10 flex justify-between items-end">
+                <div>
+                    <h2 class="text-6xl mob:text-4xl italic-black tracking-tighter uppercase leading-none">Works</h2>
+                    <div class="h-1 w-20 bg-main mt-4"></div>
+                </div>
+                <span class="text-[16px] font-black opacity-30 tracking-[0.3em] uppercase mb-1">Project Collections</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16 mob:gap-y-12">
+                <div id="project-list" class="contents">
+                    <!-- Projects injected by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //Portfolio Section -->
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 z-[200] items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+        <div class="modal-content bg-white dark:bg-neutral-900 w-full max-w-4xl max-h-[90vh] rounded-[2.5rem] overflow-hidden flex flex-col relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-6 right-6 z-10 w-12 h-12 bg-neutral-100 dark:bg-neutral-800 rounded-full flex items-center justify-center hover:bg-main hover:text-white transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="flex flex-col md:flex-row h-full overflow-y-auto">
+                <div class="w-full md:w-1/2 bg-neutral-50 dark:bg-neutral-800 flex items-center justify-center min-h-[300px] overflow-hidden">
+                    <img id="modal-img" src="" alt="Project Image" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full md:w-1/2 p-10 mob:p-8 flex flex-col justify-between">
+                    <div>
+                        <span id="modal-category" class="text-main text-[16px] font-black tracking-widest uppercase mb-4 block">Category</span>
+                        <h3 id="modal-title" class="text-4xl mob:text-3xl italic-black uppercase tracking-tight mb-8">Project Title</h3>
+                        <div class="space-y-8 text-[16px] text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                            <div class="border-l-4 border-main pl-6">
+                                <h4 class="font-bold text-neutral-900 dark:text-white mb-2 uppercase tracking-tighter text-xl">Overview</h4>
+                                <p id="modal-desc">상세 설명</p>
+                            </div>
+                            <div class="border-l-4 border-main pl-6">
+                                <h4 class="font-bold text-neutral-900 dark:text-white mb-2 uppercase tracking-tighter text-xl">Key Points</h4>
+                                <p id="modal-points">핵심 기술</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <a id="modal-link" href="#" target="_blank" class="w-full bg-main text-white py-5 rounded-2xl font-black text-center block hover:scale-[1.02] transition-transform shadow-lg shadow-main/20 uppercase tracking-widest text-[16px]">
+                            VIEW PROJECT <i class="fa-solid fa-arrow-up-right-from-square ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Project Modal -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-40 mob:py-32 bg-sub dark:bg-[#050505] transition-colors overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-7xl mob:text-5xl italic-black uppercase tracking-tighter leading-none mb-12 mob:mb-8">
+                GET IN<br/><span class="text-main">TOUCH</span>
+            </h2>
+            <a href="mailto:juhui528@gmail.com" class="text-3xl mob:text-xl font-bold hover:text-main transition-colors border-b-2 border-main pb-2 inline-block">
+                juhui528@gmail.com
+            </a>
+        </div>
+    </section>
+    <!-- //Contact Section -->
+
+    <!-- Footer -->
+    <footer class="py-12 mob:pb-32 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-900 transition-colors text-center">
+        <div class="container mx-auto px-6">
+            <div class="text-3xl italic-black uppercase mb-6 text-main">
+                GYUMIN<span class="text-neutral-800 dark:text-white transition-colors duration-300">*</span>P
+            </div>
+            <p class="text-[16px] tracking-[0.4em] text-neutral-400 dark:text-neutral-600 uppercase font-bold">
+                © 2024 JEON GYU MIN PORTFOLIO.
+            </p>
+        </div>
+    </footer>
+    <!-- //Footer -->
+
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <button id="theme-toggle" class="floating-btn bg-white dark:bg-neutral-800 text-neutral-800 dark:text-white border-2 border-neutral-100 dark:border-neutral-700 hover:scale-110 active:scale-95 flex items-center justify-center">
+            <i id="theme-icon" class="fa-solid fa-moon text-xl"></i>
+        </button>
+        <button id="top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="floating-btn bg-main text-white hover:scale-110 active:scale-95 flex items-center justify-center">
+            <i class="fa-solid fa-arrow-up text-xl"></i>
+        </button>
+    </div>
+    <!-- //Floating Controls -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
